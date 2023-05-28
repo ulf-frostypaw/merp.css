@@ -1,0 +1,43 @@
+.container{
+    width: 80% !important;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+    padding: 20px 0;
+}
+code{
+    color: rgb(255, 71, 163);
+    background: #333;
+    padding: 3px 2px;
+    border-radius: .5rem;
+}
+.navbar {
+    background-color: #f8f8f8;
+    padding: 1rem;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+  }
+  
+  .navbar a:hover {
+    color: #000;
+    background-color: #ddd;
+  }
+  
+  

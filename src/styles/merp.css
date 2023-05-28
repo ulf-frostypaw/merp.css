@@ -25,35 +25,89 @@ p,span, body{
 }
 
 /* ===== [[ BUTTONS ]] ===== */
-.btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
+button, .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
+  width: 100%;
+}
+.button:disabled, button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  /* Agrega otros estilos deseados */
+}
+
+.btn-rounded{
+  border-radius: 20px;
+}
+.normal {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  cursor: pointer;
+}
   
-  .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-light);
-  }
+.normal:hover {
+  background-color: #bdbdbd;
+  color: #333;
+}
   
-  .btn-primary:hover {
-    background-color: var(--color-primary-hover);
-  }
-  
-  .btn-secondary {
-    background-color: var(--color-secondary);
-    color: var(--color-light);
-  }
-  
-  .btn-secondary:hover {
-    background-color: var(--color-secondary-hover);
-  }
-  
+
+.primary {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background-color: #2186c4;
+  color: #fff;
+}
+
+.success {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.success:hover {
+  background-color: #1e8449;
+  color: #fff;
+}
+
+.warning {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.warning:hover {
+  background-color: #d68910;
+  color: #fff;
+}
+
+.danger {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.danger:hover {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+
 /* ===== [[ CARDS ]] ===== */
   .card {
     background-color: var(--color-light);
@@ -185,7 +239,206 @@ h6 {
   .col-12 {
     flex-basis: 100%;
   }
+
+/* ===== [[ MARGINS (int) ]] ===== */
+  .m-1 {
+    margin: 0.25rem;
+  }
   
+  .m-2 {
+    margin: 0.5rem;
+  }
+  
+  .m-3 {
+    margin: 1rem;
+  }
+
+  .m-4 {
+    margin: 1rem;
+  }
+  
+  .m-5 {
+    margin: 1.25rem;
+  }
+  .m-6 {
+    margin: 1.5rem;
+  }
+  
+  .m-7 {
+    margin: 1.75rem;
+  }
+  
+  .m-8 {
+    margin: 2rem;
+  }
+  
+  .m-9 {
+    margin: 2.25rem;
+  }
+  
+  .m-10 {
+    margin: 2.5rem;
+  }
+  
+  .m-11 {
+    margin: 2.75rem;
+  }
+  
+  .m-12 {
+    margin: 3rem;
+  }
+
+  /* ===== [[ PADDING (ext) ]] ===== */
+  .p-1 {
+    padding: 0.25rem;
+  }
+  
+  .p-2 {
+    padding: 0.5rem;
+  }
+  
+  .p-3 {
+    padding: 1rem;
+  }
+
+  .p-4 {
+    padding: 1rem;
+  }
+  
+  .p-5 {
+    padding: 1.25rem;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .p-7 {
+    padding: 1.75rem;
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  .p-9 {
+    padding: 2.25rem;
+  }
+  
+  .p-10 {
+    padding: 2.5rem;
+  }
+  
+  .p-11 {
+    padding: 2.75rem;
+  }
+  
+  .p-12 {
+    padding: 3rem;
+  }
+  
+
+  /* ===== [[ INPUT STYLES ]] ===== */
+input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+  
+  /* ===== [[ TEXT STYLES ]] ===== */
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-justify{
+  text-align: justify;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+.text-lowercase{
+  text-transform: lowercase;
+}
+.text-capitalize{
+  text-transform: capitalize;
+}
+/* ===== [[ ALIGNS ]] ===== */
+.align-start{
+  align-items: flex-start;
+}
+.align-center{
+  align-items: center;
+}
+.align-end{
+  align-items: flex-end;
+}
+.align-stretch{
+  align-items: stretch;
+}
+
+/* ===== [[ DYSPLAY ]] ===== */
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+}
+.d-inline{
+  display: inline;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.d-flex{
+  display: flex;
+}
+.d-inline-flex{
+  display: inline-flex;
+}
+.d-grid{
+  display: grid;
+}
+.d-table{
+  display: table;
+}
+.d-table-cell{
+  display: table-cell;
+}
+.d-table-row{
+  display: table-row;
+}
+
+/* ===== [[ ALERTS ]] ===== */
+.alert {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
 /* ===== [[ FORMS ]] ===== */
 .form-group {
     margin-bottom: 1.5rem;
