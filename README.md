@@ -16,6 +16,8 @@ Completados: 4/10
 * [ ] Iconos
 * [ ] Estilo de estados
 * [ ] Animaciones y transiciones
+* [ ] Npm modules
+* [ ] Soporte para modo claro y oscuro
 
 ### Version 
-Versión del framework: v0.2.1-05-27
+Versión del framework: v0.3-05-28

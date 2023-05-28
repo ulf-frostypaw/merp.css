@@ -1,0 +1,30 @@
+:root {
+    --color-primary: #007bff;
+    --color-primary-hovered: #2186c4;
+    --color-secondary: #6c757d;
+    --color-success: #28a745;
+    --color-success-hovered: #1e8449; 
+    --color-danger: #dc3545;
+    --color-danger-hovered: #c0392b;
+    --color-warning: #ffc107;
+    --color-warning-hovered: #d68910;
+    --color-normal: #e0e0e0;
+    --color-normal-hovered: #bdbdbd;
+
+    --color-info: #17a2b8;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
+
+    /* ===== [[ DARK SCHEME ]] ===== */
+
+    /*
+      Azul Marino: #0B1E3F
+      Azul Oscuro: #1C4161
+      Azul Medio: #1F5472
+      Azul Claro: #3282B8
+      Verde Azulado: #36A1C9
+      Turquesa: #43C6DB
+      Verde Claro: #62D8E8
+    */
+}
+  

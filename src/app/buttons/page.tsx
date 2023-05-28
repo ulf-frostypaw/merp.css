@@ -26,6 +26,17 @@ const Buttons = () =>{
                     </div>
                 </div>
                 <div className="card">
+                    <span>Estilos de botones por defecto. Usa la clase con el prefijo <code>.border</code>.</span>
+                    <div className="buttons">
+                        <button className="btn border-normal">Button default</button>
+                        <button className="btn border-primary color-primary">Button primary</button>
+                        <button className="btn border-success color-success">Button success</button>
+                        <button className="btn border-warning color-warning">Button warning</button>
+                        <button className="btn border-danger color-danger">Button danger</button>
+                    </div>
+                    <span><b>Nota: Puedes usar las clases <code>.color-X</code></b> y aplicar otros colores: <code>normal</code>, <code>primary</code>, <code>success</code>, <code>warning</code>, <code>danger</code></span>
+                </div>
+                <div className="card">
                     <span>Estilos de botones deshabilitados. Usa la propiedad <code>disabled</code></span>
                     <div className="buttons">
                         <button className="btn" disabled>Button default</button>
